@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Logo / Site Name */}
         <div className="flex flex-col items-start">
           <h1 className="text-2xl font-bold text-white mb-4">VisaTracker</h1>
           <p className="text-gray-400">
@@ -13,7 +12,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Contact Us</h3>
           <p>Email: visa@tracker.com</p>
@@ -21,7 +19,6 @@ const Footer = () => {
           <p>Address: Dhaka, Bangladesh</p>
         </div>
 
-        {/* Social Media */}
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Follow Us</h3>
           <div className="flex space-x-4">
