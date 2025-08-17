@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Schengen Visa",
+    "country": "Spain",
+    "type": "Tourist",
+    "description": "Short-term travel to Schengen countries.",
+    "processingTime": "5-10 days"
+  },
+  {
+    "id": 2,
+    "name": "US Tourist Visa",
+    "country": "USA",
+    "type": "Tourist",
+    "description": "Visit the USA for leisure or family purposes.",
+    "processingTime": "10-15 days"
+  },
+  {
+    "id": 3,
+    "name": "UK Work Visa",
+    "country": "UK",
+    "type": "Work",
+    "description": "Long-term employment in the UK.",
+    "processingTime": "20-30 days"
+  },
+  {
+    "id": 4,
+    "name": "Canada Student Visa",
+    "country": "Canada",
+    "type": "Student",
+    "description": "For studying in Canada.",
+    "processingTime": "15-20 days"
+  },
+  {
+    "id": 5,
+    "name": "Australia Work Visa",
+    "country": "Australia",
+    "type": "Work",
+    "description": "For employment in Australia.",
+    "processingTime": "25-35 days"
+  },
+  {
+    "id": 6,
+    "name": "Germany Tourist Visa",
+    "country": "Germany",
+    "type": "Tourist",
+    "description": "For tourism in Germany.",
+    "processingTime": "7-12 days"
+  },
+  {
+    "id": 7,
+    "name": "Japan Work Visa",
+    "country": "Japan",
+    "type": "Work",
+    "description": "For working in Japan.",
+    "processingTime": "20-30 days"
+  },
+  {
+    "id": 8,
+    "name": "France Student Visa",
+    "country": "France",
+    "type": "Student",
+    "description": "For studying in France.",
+    "processingTime": "10-15 days"
+  },
+  {
+    "id": 9,
+    "name": "Italy Tourist Visa",
+    "country": "Italy",
+    "type": "Tourist",
+    "description": "For tourism in Italy.",
+    "processingTime": "5-10 days"
+  }
+]
