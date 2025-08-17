@@ -6,7 +6,6 @@ const AboutSection = () => {
   return (
     <section className="bg-gray-50 py-20 px-6 md:px-20 my-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* Image */}
         <div className="md:w-1/2">
           <img
             src={aboutImage}
@@ -15,7 +14,6 @@ const AboutSection = () => {
           />
         </div>
 
-        {/* Text Content */}
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-4xl font-bold text-gray-800">
             About VisaTrack
@@ -27,7 +25,6 @@ const AboutSection = () => {
             applications with ease.
           </p>
 
-          {/* Features */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex items-center gap-3 p-4 bg-white rounded shadow hover:shadow-lg transition">
               <span className="text-blue-500 text-2xl">📄</span>
