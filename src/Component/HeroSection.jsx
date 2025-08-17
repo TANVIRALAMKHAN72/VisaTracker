@@ -4,17 +4,15 @@ import heroImage from "../assets/BLS-International-Spain-Visa-Application-Center
 const HeroSection = () => {
   return (
     <section className="relative bg-gray-50 min-h-screen flex items-center">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Visa Services Banner"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black opacity-40"></div> {/* dark overlay */}
+        <div className="absolute inset-0 bg-black opacity-40"></div>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center text-white min-h-screen">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6">
           Explore Visa Services Effortlessly
