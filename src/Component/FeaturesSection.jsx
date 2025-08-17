@@ -30,7 +30,6 @@ const FeaturesSection = () => {
               key={index}
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 flex flex-col items-center justify-center text-center"
             >
-              {/* Icon centered */}
               {feature.icon}
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
