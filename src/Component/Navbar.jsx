@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
-import { Menu, X } from "lucide-react"; // সুন্দর আইকনের জন্য
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,14 +9,12 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold text-blue-600">
               VisaPortal
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             <Link to="/" className="text-gray-700 hover:text-blue-500">
               Home
@@ -32,7 +30,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -44,7 +41,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-white px-4 py-3 space-y-2 shadow-lg">
           <Link to="/" className="block text-gray-700 hover:text-blue-500">
