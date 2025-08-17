@@ -5,8 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const MyApplicationPage = () => {
   const location = useLocation();
-  const selectedVisa =
-    location.state?.visaName || localStorage.getItem("selectedVisa") || "";
+  const newVisa = location.state?.visaName;
 
   const [name, setName] = useState("");
   const [passport, setPassport] = useState("");
@@ -18,12 +17,14 @@ const MyApplicationPage = () => {
     if (savedData) {
       setName(savedData.name || "");
       setPassport(savedData.passport || "");
-      setVisaType(savedData.visaType || selectedVisa || "");
+      setVisaType(savedData.visaType || "");
       setStep(savedData.step || 1);
-    } else if (selectedVisa) {
-      setVisaType(selectedVisa);
     }
-  }, [selectedVisa]);
+
+    if (newVisa) {
+      setVisaType(newVisa); 
+    }
+  }, [newVisa]);
 
   useEffect(() => {
     localStorage.setItem(
