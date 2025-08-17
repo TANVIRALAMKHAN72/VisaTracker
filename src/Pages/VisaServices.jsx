@@ -30,14 +30,13 @@ const VisaServices = () => {
   const countryOptions = ["All", ...new Set(services.map((s) => s.country))];
 
   const handleApply = (service) => {
-    // ভিসার নাম localStorage-এ সেভ করা হচ্ছে
     localStorage.setItem("selectedVisa", service.name);
-    navigate("/my-application");
+    navigate("/my-application", { state: { visaName: service.name } });
   };
 
   return (
     <div className="bg-gray-50 min-h-screen pt-24 px-6 my-6">
-      <div className="flex flex-col md:flex-row gap-4 mb-10 p-4 rounded shadow bg-gray-50 ">
+      <div className="flex flex-col md:flex-row gap-4 mb-10 p-4 rounded shadow bg-gray-50">
         <input
           type="text"
           placeholder="Search Visa..."
