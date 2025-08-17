@@ -33,19 +33,18 @@ const MyApplicationPage = () => {
     if (step < 3) {
       setStep(step + 1);
     } else {
-      setStep(3); // Ensure 100%
-      toast.success("Application Complete! 🎉"); // Toaster
+      setStep(3); 
+      toast.success("Application Complete! 🎉"); 
     }
   };
 
-  const progressPercent = step === 3 ? 100 : step * 33; // Step 3 = 100%
+  const progressPercent = step === 3 ? 100 : step * 33; 
 
   return (
     <div className="p-6 pt-24 bg-gray-50 min-h-screen">
       <ToastContainer position="top-right" autoClose={3000} />
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-center">My Visa Application</h2>
 
-      {/* Progress Steps */}
       <div className="flex gap-4 mb-4">
         {["Submitted", "Processing", "Approved"].map((s, idx) => (
           <div
@@ -59,7 +58,6 @@ const MyApplicationPage = () => {
         ))}
       </div>
 
-      {/* Progress Bar with % */}
       <div className="relative h-6 w-full bg-gray-200 rounded mb-6">
         <div
           className="h-6 bg-blue-500 rounded transition-all duration-500"
@@ -70,7 +68,6 @@ const MyApplicationPage = () => {
         </span>
       </div>
 
-      {/* Form */}
       <form
         onSubmit={(e) => {
           e.preventDefault();
