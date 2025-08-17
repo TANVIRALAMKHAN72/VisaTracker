@@ -30,7 +30,9 @@ const VisaServices = () => {
   const countryOptions = ["All", ...new Set(services.map((s) => s.country))];
 
   const handleApply = (service) => {
-    navigate("/my-application", { state: { visaName: service.name } });
+    // ভিসার নাম localStorage-এ সেভ করা হচ্ছে
+    localStorage.setItem("selectedVisa", service.name);
+    navigate("/my-application");
   };
 
   return (
